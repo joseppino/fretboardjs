@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>fretboard.js</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="chord-select">
+        <select>
+          <option>A</option>
+          <option>A#/Bb</option>
+          <option>B</option>
+          <option>C</option>
+          <option>C#/Db</option>
+          <option>D</option>
+          <option>D#/Eb</option>
+          <option>E</option>
+          <option>F</option>
+          <option>F#/Gb</option>
+          <option>G</option>
+          <option>G#/Ab</option>
+        </select>
+        <select>
+          <option>Major</option>
+          <option>Minor</option>
+          <option>Dominant</option>
+          <option>Diminished</option>
+          <option>Half Diminished (m7b5)</option>
+          <option>Sus 2</option>
+          <option>Sus 4</option>
+          <option>Augmented</option>
+        </select>
+        <select>
+          <option></option>
+          <option>6</option>
+          <option>7</option>
+          <option>9</option>
+          <option>11</option>
+          <option>13</option>
+          <option>Add 9</option>
+          <option>6/9</option>
+        </select>
+      </div>
+      <svg id="guitar-neck" viewbox="-30 0 1220 350" height="350">
+        <rect id="fretboard" width="1202" height="300" fill="#4B371C"/>
+
+        <circle class="dot" cx="250" cy="150"></circle>
+        <circle class="dot" cx="450" cy="150"></circle>
+        <circle class="dot" cx="650" cy="150"></circle>
+        <circle class="dot" cx="850" cy="150"></circle>
+        <circle class="dot" cx="1150" cy="50"></circle>
+        <circle class="dot" cx="1150" cy="250"></circle>
+
+        
+        <line class="fret" x1="100" y1="0" x2="100" y2="300" />
+        <line class="fret" x1="200" y1="0" x2="200" y2="300" />
+        <line class="fret" x1="300" y1="0" x2="300" y2="300" />
+        <line class="fret" x1="400" y1="0" x2="400" y2="300" />
+        <line class="fret" x1="500" y1="0" x2="500" y2="300" />
+        <line class="fret" x1="600" y1="0" x2="600" y2="300" />
+        <line class="fret" x1="700" y1="0" x2="700" y2="300" />
+        <line class="fret" x1="800" y1="0" x2="800" y2="300" />
+        <line class="fret" x1="900" y1="0" x2="900" y2="300" />
+        <line class="fret" x1="1000" y1="0" x2="1000" y2="300" />
+        <line class="fret" x1="1100" y1="0" x2="1100" y2="300" />
+        <line class="fret" x1="1200" y1="0" x2="1200" y2="300" />
+
+        <line id="string1" class="string" x1="0" y1="25" x2="1200" y2="25" />
+        <line id="string2" class="string" x1="0" y1="75" x2="1200" y2="75" />
+        <line id="string3" class="string" x1="0" y1="125" x2="1200" y2="125" />
+        <line id="string4" class="string" x1="0" y1="175" x2="1200" y2="175" />
+        <line id="string5" class="string" x1="0" y1="225" x2="1200" y2="225" />
+        <line id="string6" class="string" x1="0" y1="275" x2="1200" y2="275" />
+
+        <line class="nut" x1="0" y1="0" x2="0" y2="300" />
+
+        <!-- <circle class="open-note" cx="0" cy="25" />
+        <circle class="open-note" cx="0" cy="75" />
+        <circle class="open-note" cx="0" cy="125" />
+        <circle class="open-note" cx="0" cy="175" />
+        <circle class="open-note" cx="0" cy="225" />
+        <circle class="open-note" cx="0" cy="275" />  -->
+
+        <text x="-30" y="30">e</text>
+        <text x="-30" y="80">B</text>
+        <text x="-30" y="130">G</text>
+        <text x="-30" y="180">D</text>
+        <text x="-30" y="230">A</text>
+        <text x="-30" y="280">E</text>
+
+        <text x="50" y="325">1</text>
+        <text x="150" y="325">2</text>
+        <text x="250" y="325">3</text>
+        <text x="350" y="325">4</text>
+        <text x="450" y="325">5</text>
+        <text x="550" y="325">6</text>
+        <text x="650" y="325">7</text>
+        <text x="750" y="325">8</text>
+        <text x="850" y="325">9</text>
+        <text x="950" y="325">10</text>
+        <text x="1050" y="325">11</text>
+        <text x="1150" y="325">12</text>
+    </svg>
+  </div>
+  <script src="index.js"></script>  
+</body>
+</html>

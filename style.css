@@ -1,0 +1,47 @@
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+#chord-select {
+  display: flex;
+  flex-direction: row;
+}
+
+circle.dot {
+  r: 10;
+  fill: white
+}
+
+circle.note {
+  r: 10;
+  stroke: white;
+  fill: black;
+}
+
+circle.open-note {
+  r: 10;
+  stroke: black;
+  fill: white;
+}
+
+line.nut {
+  stroke: rgb(245, 245, 166);
+  stroke-width: 10;
+}
+
+line.fret {
+  stroke: white;
+}
+
+line.string {
+  stroke: white;
+}
+
+.muted{
+  stroke: red !important;
+}
+
+text {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
